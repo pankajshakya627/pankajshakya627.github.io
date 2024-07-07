@@ -1,17 +1,55 @@
 # Portfolio
+
 ---
-## Deep Learning
 
-### Finetune a LLM(LLAMA3-8B) Using PEFT 
+## Fine-Tuning a Large Language Model (LLAMA3-8B) Using Parameter-Efficient Fine-Tuning (PEFT)
 
-My complete implementation of assignments and projects in [***Finetune a LLM(LLAMA3-8B) Using PEFT ***]
+In this project, I focused on fine-tuning the LLAMA3-8B, a state-of-the-art large language model, using Parameter-Efficient Fine-Tuning (PEFT) techniques. The objective was to enhance the model's performance on specific downstream tasks while optimizing computational resources and maintaining the model's robustness.
+
+### Key Highlights
+
+- **Model Selection**: Utilized the LLAMA3-8B, known for its exceptional capabilities in natural language understanding and generation.
+- **Parameter-Efficient Fine-Tuning (PEFT)**: Implemented PEFT methods to adjust only a subset of model parameters, significantly reducing the computational overhead compared to traditional fine-tuning approaches.
+- **Task-Specific Adaptation**: Tailored the model to excel in targeted applications, improving accuracy and efficiency in real-world scenarios.
+- **Resource Optimization**: Achieved substantial improvements in performance without the need for extensive computational resources, making the fine-tuning process more sustainable and cost-effective.
+- **Evaluation and Validation**: Conducted thorough evaluations to ensure the fine-tuned model met the desired performance benchmarks, including accuracy, latency, and generalization capabilities.
+
+#### Technical Skills Demonstrated
+
+- Proficiency in working with large-scale language models and understanding their architectural complexities.
+- Expertise in advanced fine-tuning techniques, particularly PEFT, to achieve efficient model adaptations.
+- Strong analytical skills to evaluate model performance and implement necessary adjustments.
+- Ability to optimize computational resources while maintaining high-performance standards.
 
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/pankajshakya627/Simple_LLM_Fine_tuning.ipynb)
 
 [![Run in Google Colab](https://img.shields.io/badge/Colab-Run_in_Google_Colab-blue?logo=Google&logoColor=FDBA18)](https://colab.research.google.com/drive/1vTpMyXsJVUItf2vzjC50ZX5PnaDBkn-N?usp=sharing)
 
+[![PyPI - License](https://img.shields.io/pypi/l/langchain-core?style=flat-square)](https://opensource.org/licenses/MIT)
 
-**AI-PDF Assistant:** This project focuses on leveraging the power of OPENAI APIs, HuggingFace API, Python Langchain, and Streamlit to create a PDF question-answering application. The objective is to extract text from PDF documents, utilize Language Models (LLMs) to generate accurate answers to user queries and present the results in a user-friendly interface built with Streamlit. ([GitHub](https://github.com/pankajshakya627/Langchain_PDF/)).
+---
+
+## AI-PDF Assistant: Advanced PDF Processing and Language Modeling
+
+In this project, I developed "AI-PDF Assistant" a comprehensive tool designed to leverage the capabilities of advanced language models for extracting, processing, and analyzing content from PDF documents. The tool aims to streamline document management tasks by integrating natural language processing techniques.
+
+### Key Highlights
+
+- **PDF Extraction**: Implemented robust methods to accurately extract text and metadata from PDF documents, ensuring high fidelity and precision.
+- **Language Modeling Integration**: Utilized state-of-the-art language models to enhance text analysis, providing capabilities such as summarization, sentiment analysis, and information retrieval directly from PDF content.
+- **User-Friendly Interface**: Developed an intuitive interface to facilitate easy interaction with the tool, allowing users to upload PDFs and receive processed outputs seamlessly.
+- **Automated Workflows**: Designed automated workflows to handle large volumes of documents efficiently, reducing manual effort and increasing productivity.
+- **Customizable Pipelines**: Enabled customization of processing pipelines to cater to specific user needs, such as targeted keyword extraction and contextual analysis.
+
+### Technical Skills Demonstrated
+
+- Proficiency in working with PDF extraction libraries and tools to ensure accurate text retrieval.
+- Expertise in integrating language models with document processing workflows to enhance analysis capabilities.
+- Strong software development skills to create user-friendly interfaces and automated processing pipelines.
+- Ability to handle and process large datasets efficiently, optimizing for performance and accuracy.
+- Experience in developing customizable solutions to meet diverse user requirements.
+
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/pankajshakya627/Langchain_PDF/)
 
 <!-- **Dependency Parsing:** A Neural Transition-Based Dependency Parsing system with one-layer MLP ([GitHub](https://github.com/chriskhanhtran/CS224n-NLP-Assignments/tree/master/assignments/a3)).
 
@@ -108,4 +146,4 @@ My complete implementation of assignments and projects in [***Finetune a LLM(LLA
 - [In America - We Call This Place Our Home (Massachusetts)](https://www.youtube.com/watch?v=jzfcM_iO0FU)
  -->
 ---
-<center>© 2024 Khanh Tran. Powered by Jekyll and the Minimal Theme.</center>
+<!-- <center>© 2024 Khanh Tran. Powered by Jekyll and the Minimal Theme.</center> -->
