@@ -1,23 +1,26 @@
 # Portfolio
 ---
-## Natural Language Processing
+## Deep Learning
 
-### CS224n: Natural Language Processing with Deep Learning
+### Finetune a LLM(LLAMA3-8B) Using PEFT 
 
-My complete implementation of assignments and projects in [***CS224n: Natural Language Processing with Deep Learning***](http://web.stanford.edu/class/cs224n/) by Stanford (Winter, 2019).
+My complete implementation of assignments and projects in [***Finetune a LLM(LLAMA3-8B) Using PEFT ***]
 
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/CS224n-NLP-Solutions/tree/master/assignments/)
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/pankajshakya627/Simple_LLM_Fine_tuning.ipynb)
 
-**Neural Machine Translation:** An NMT system which translates texts from Spanish to English using a Bidirectional LSTM encoder for the source sentence and a Unidirectional LSTM Decoder with multiplicative attention for the target sentence ([GitHub](https://github.com/chriskhanhtran/CS224n-NLP-Solutions/tree/master/assignments/)).
+[![Run in Google Colab](https://img.shields.io/badge/Colab-Run_in_Google_Colab-blue?logo=Google&logoColor=FDBA18)](https://colab.research.google.com/drive/1vTpMyXsJVUItf2vzjC50ZX5PnaDBkn-N?usp=sharing)
 
-**Dependency Parsing:** A Neural Transition-Based Dependency Parsing system with one-layer MLP ([GitHub](https://github.com/chriskhanhtran/CS224n-NLP-Assignments/tree/master/assignments/a3)).
+
+**AI-PDF Assistant:** This project focuses on leveraging the power of OPENAI APIs, HuggingFace API, Python Langchain, and Streamlit to create a PDF question-answering application. The objective is to extract text from PDF documents, utilize Language Models (LLMs) to generate accurate answers to user queries and present the results in a user-friendly interface built with Streamlit. ([GitHub](https://github.com/pankajshakya627/Langchain_PDF/)).
+
+<!-- **Dependency Parsing:** A Neural Transition-Based Dependency Parsing system with one-layer MLP ([GitHub](https://github.com/chriskhanhtran/CS224n-NLP-Assignments/tree/master/assignments/a3)).
 
 <center><img src="images/nlp.png"/></center>
 
 ---
 ### Detect Non-negative Airline Tweets: BERT for Sentiment Analysis
 
-[![Run in Google Colab](https://img.shields.io/badge/Colab-Run_in_Google_Colab-blue?logo=Google&logoColor=FDBA18)](https://colab.research.google.com/drive/1f32gj5IYIyFipoINiC8P3DvKat-WWLUK)
+[![Run in Google Colab](https://img.shields.io/badge/Colab-Run_in_Google_Colab-blue?logo=Google&logoColor=FDBA18)](https://colab.research.google.com/drive/1vTpMyXsJVUItf2vzjC50ZX5PnaDBkn-N?usp=sharing)
 
 <div style="text-align: justify">The release of Google's BERT is described as the beginning of a new era in NLP. In this notebook I'll use the HuggingFace's transformers library to fine-tune pretrained BERT model for a classification task. Then I will compare BERT's performance with a baseline model, in which I use a TF-IDF vectorizer and a Naive Bayes classifier. The transformers library helps us quickly and efficiently fine-tune the state-of-the-art BERT model and yield an accuracy rate 10% higher than the baseline model.</div>
 
@@ -103,6 +106,6 @@ My complete implementation of assignments and projects in [***CS224n: Natural La
 - [The Weight We Carry is Love - TORONTO](https://www.youtube.com/watch?v=vfZwdEWgUPE)
 - [In America - Boston 2017](https://www.youtube.com/watch?v=YdXufiebgyc)
 - [In America - We Call This Place Our Home (Massachusetts)](https://www.youtube.com/watch?v=jzfcM_iO0FU)
-
+ -->
 ---
 <center>© 2020 Khanh Tran. Powered by Jekyll and the Minimal Theme.</center>
