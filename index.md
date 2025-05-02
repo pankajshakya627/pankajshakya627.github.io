@@ -4,9 +4,8 @@ title: "Pankaj Shakya – Data Scientist (Generative AI)"
 permalink: /
 ---
 
-<div style="padding: 0 2rem;">
   
-# Hello, I’m Pankaj Shakya 👋
+# Hello, I’m Pankaj 👋
 
 I am a passionate **Data Scientist** with 4+ years of experience specializing in **Generative AI**, **NLP**, and **Deep Learning**. Currently at ITC Infotech, I design and deploy AI-driven solutions that transform unstructured data into actionable insights.
 
@@ -18,11 +17,8 @@ I am a passionate **Data Scientist** with 4+ years of experience specializing in
 - **Reinforcement Learning**: Interactive learning experiences and case-study-driven tutors using DQN, PPO in simulated environments.
 - **Data Engineering & Analytics**: Python, SQL, pandas, and data visualization to uncover patterns and guide product decisions.
 
-</div>
 
 ## 🔧 Featured Projects
-
-<div style="padding: 0 2rem;">
 
 ### 1. GenAI PDF Assistant
 - **Description**: End-to-end RAG-based chatbot for querying large PDF documents.
@@ -82,23 +78,15 @@ I am a passionate **Data Scientist** with 4+ years of experience specializing in
 
   [Code](https://github.com/pankajshakya627/cifar10-adversarial) • [Results](#)
 
-</div>
 
 ## 📫 Connect with Me
-
-<div style="padding: 0 2rem;">
 
 - [LinkedIn](https://www.linkedin.com/in/pankajshakya627)
 - [GitHub](https://github.com/pankajshakya627)
 - [Resume (PDF)](https://pankajshakya627.github.io/assets/Pankaj_Shakya_Resume.pdf)
-- 📧 pankaj.shakya@example.com
-
-</div>
+- 📧 pankajshakya627@gmail.com
 
 ---
 
-<div style="padding: 0 2rem;">
-
 > "Transforming data into generative intelligence."
 
-</div>
