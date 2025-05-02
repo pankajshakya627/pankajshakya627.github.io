@@ -4,7 +4,6 @@ title: "Pankaj Shakya – Data Scientist (Generative AI)"
 permalink: /
 ---
 
-<div style="padding: 0 2rem;">
 
 # Hello, I’m Pankaj Shakya 👋
 
