@@ -1,149 +1,80 @@
-# Portfolio
+---
+layout: home
+title: "Pankaj Shakya – Data Scientist (Generative AI)"
+permalink: /
+---
+
+# Hello, I’m Pankaj Shakya 👋
+
+I am a passionate **Data Scientist** with 4+ years of experience specializing in **Generative AI**, **NLP**, and **Deep Learning**. Currently at ITC Infotech, I design and deploy AI-driven solutions that transform unstructured data into actionable insights.
+
+## 🚀 Core Expertise
+
+- **Generative AI & LLMs**: Fine-tuning cutting-edge models (e.g., LLAMA3-8B) using PEFT; building Retrieval-Augmented Generation (RAG) pipelines for contextual Q&A.
+- **Natural Language Processing**: Designing chatbots, semantic search engines, and AI-powered PDF assistants leveraging embeddings (FAISS, Chroma).
+- **MLOps & Deployment**: Productionizing ML solutions with **Streamlit**, **Azure AI Foundry Promptflow**, and **MLflow** for scalable, reliable workflows.
+- **Reinforcement Learning**: Interactive learning experiences and case-study-driven tutors using DQN, PPO in simulated environments.
+- **Data Engineering & Analytics**: Python, SQL, pandas, and data visualization to uncover patterns and guide product decisions.
+
+## 🔧 Featured Projects
+
+### 1. GenAI PDF Assistant
+- **Description**: End-to-end RAG-based chatbot for querying large PDF documents.
+- **Tech Stack**: LangChain, OpenAI Embeddings, FAISS, Streamlit, Azure Storage.
+- **Highlights**:
+  - Automated document ingestion and chunking.
+  - Semantic search with contextual response generation.
+  - Deployed as a web app with interactive UI and analytics dashboard.
+
+[View on GitHub](https://github.com/pankajshakya627/Langchain_PDF) • [Live Demo](#)
 
 ---
 
-## Fine-Tuning a Large Language Model (LLAMA3-8B) Using Parameter-Efficient Fine-Tuning (PEFT)
+### 2. LLAMA3-8B Fine-Tuning Framework
+- **Description**: Parameter-efficient fine-tuning (PEFT) pipeline for LLAMA3-8B on domain-specific MCQ datasets.
+- **Tech Stack**: PyTorch, PEFT (LoRA), Transformers, Weights & Biases.
+- **Highlights**:
+  - Custom data collators for masked LM and multiple-choice tasks.
+  - Achieved 85%+ accuracy on academic test sets after hyperparameter tuning.
+  - Automated logging and model versioning with W&B.
 
-In this project, I focused on fine-tuning the LLAMA3-8B, a state-of-the-art large language model, using Parameter-Efficient Fine-Tuning (PEFT) techniques. The objective was to enhance the model's performance on specific downstream tasks while optimizing computational resources and maintaining the model's robustness.
-
-### Key Highlights
-
-- **Model Selection**: Utilized the LLAMA3-8B, known for its exceptional capabilities in natural language understanding and generation.
-- **Parameter-Efficient Fine-Tuning (PEFT)**: Implemented PEFT methods to adjust only a subset of model parameters, significantly reducing the computational overhead compared to traditional fine-tuning approaches.
-- **Task-Specific Adaptation**: Tailored the model to excel in targeted applications, improving accuracy and efficiency in real-world scenarios.
-- **Resource Optimization**: Achieved substantial improvements in performance without the need for extensive computational resources, making the fine-tuning process more sustainable and cost-effective.
-- **Evaluation and Validation**: Conducted thorough evaluations to ensure the fine-tuned model met the desired performance benchmarks, including accuracy, latency, and generalization capabilities.
-
-#### Technical Skills Demonstrated
-
-- Proficiency in working with large-scale language models and understanding their architectural complexities.
-- Expertise in advanced fine-tuning techniques, particularly PEFT, to achieve efficient model adaptations.
-- Strong analytical skills to evaluate model performance and implement necessary adjustments.
-- Ability to optimize computational resources while maintaining high-performance standards.
-
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/pankajshakya627/Simple_LLM_Fine_tuning.ipynb)
-
-[![Run in Google Colab](https://img.shields.io/badge/Colab-Run_in_Google_Colab-blue?logo=Google&logoColor=FDBA18)](https://colab.research.google.com/drive/1vTpMyXsJVUItf2vzjC50ZX5PnaDBkn-N?usp=sharing)
-
-[![PyPI - License](https://img.shields.io/pypi/l/langchain-core?style=flat-square)](https://opensource.org/licenses/MIT)
+[Explore Code](https://github.com/pankajshakya627/MCQ_FineTune) • [Colab Notebook](#)
 
 ---
 
-## AI-PDF Assistant: Advanced PDF Processing and Language Modeling
+### 3. Invoice Recognition Streamlit App
+- **Description**: AI-driven invoice parser using Azure AI Studio Promptflow with vision models.
+- **Tech Stack**: Streamlit, Azure Promptflow, OpenAI, FastAPI.
+- **Highlights**:
+  - Real-time image downscaling and OCR integration.
+  - JSON output schema for line-item extraction.
+  - Automatic error handling and retry logic for robust performance.
 
-In this project, I developed "AI-PDF Assistant" a comprehensive tool designed to leverage the capabilities of advanced language models for extracting, processing, and analyzing content from PDF documents. The tool aims to streamline document management tasks by integrating natural language processing techniques.
-
-### Key Highlights
-
-- **PDF Extraction**: Implemented robust methods to accurately extract text and metadata from PDF documents, ensuring high fidelity and precision.
-- **Language Modeling Integration**: Utilized state-of-the-art language models to enhance text analysis, providing capabilities such as summarization, sentiment analysis, and information retrieval directly from PDF content.
-- **User-Friendly Interface**: Developed an intuitive interface to facilitate easy interaction with the tool, allowing users to upload PDFs and receive processed outputs seamlessly.
-- **Automated Workflows**: Designed automated workflows to handle large volumes of documents efficiently, reducing manual effort and increasing productivity.
-- **Customizable Pipelines**: Enabled customization of processing pipelines to cater to specific user needs, such as targeted keyword extraction and contextual analysis.
-
-### Technical Skills Demonstrated
-
-- Proficiency in working with PDF extraction libraries and tools to ensure accurate text retrieval.
-- Expertise in integrating language models with document processing workflows to enhance analysis capabilities.
-- Strong software development skills to create user-friendly interfaces and automated processing pipelines.
-- Ability to handle and process large datasets efficiently, optimizing for performance and accuracy.
-- Experience in developing customizable solutions to meet diverse user requirements.
-
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/pankajshakya627/Langchain_PDF/)
-
-<!-- **Dependency Parsing:** A Neural Transition-Based Dependency Parsing system with one-layer MLP ([GitHub](https://github.com/chriskhanhtran/CS224n-NLP-Assignments/tree/master/assignments/a3)).
-
-<center><img src="images/nlp.png"/></center>
+[Source Code](https://github.com/pankajshakya627/invoice-recognition-app) • [Demo](#)
 
 ---
-### Detect Non-negative Airline Tweets: BERT for Sentiment Analysis
 
-[![Run in Google Colab](https://img.shields.io/badge/Colab-Run_in_Google_Colab-blue?logo=Google&logoColor=FDBA18)](https://colab.research.google.com/drive/1vTpMyXsJVUItf2vzjC50ZX5PnaDBkn-N?usp=sharing)
+### 4. Interactive RL Tutor for GenAI
+- **Description**: Reinforcement Learning-based tutor that teaches GenAI concepts through simulations and quizzes.
+- **Tech Stack**: Gym, PyTorch, Streamlit, Matplotlib.
+- **Highlights**:
+  - Custom OpenAI Gym environments modeling AI decision scenarios.
+  - Visualization of learning curves and policy improvements.
+  - Integrated quiz module for consolidating learning outcomes.
 
-<div style="text-align: justify">The release of Google's BERT is described as the beginning of a new era in NLP. In this notebook I'll use the HuggingFace's transformers library to fine-tune pretrained BERT model for a classification task. Then I will compare BERT's performance with a baseline model, in which I use a TF-IDF vectorizer and a Naive Bayes classifier. The transformers library helps us quickly and efficiently fine-tune the state-of-the-art BERT model and yield an accuracy rate 10% higher than the baseline model.</div>
-
-<center><img src="images/BERT-classification.png"/></center>
-
----
-### Detect Food Trends from Facebook Posts: Co-occurence Matrix, Lift and PPMI
-
-[![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](projects/detect-food-trends-facebook.html)
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/facebook-detect-food-trends)
-
-<div style="text-align: justify">First I build co-occurence matrices of ingredients from Facebook posts from 2011 to 2015. Then, to identify interesting and rare ingredient combinations that occur more than by chance, I calculate Lift and PPMI metrics. Lastly, I plot time-series data of identified trends to validate my findings. Interesting food trends have emerged from this analysis.</div>
-<br>
-<center><img src="images/fb-food-trends.png"></center>
-<br>
+[Repository](https://github.com/pankajshakya627/rl-genai-tutor) • [Live Experience](#)
 
 ---
-### Detect Spam Messages: TF-IDF and Naive Bayes Classifier
 
-[![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](projects/detect-spam-nlp.html)
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/detect-spam-messages-nlp/blob/master/detect-spam-nlp.ipynb)
+## 📫 Connect with Me
 
-<div style="text-align: justify">In order to predict whether a message is spam, first I vectorized text messages into a format that machine learning algorithms can understand using Bag-of-Word and TF-IDF. Then I trained a machine learning model to learn to discriminate between normal and spam messages. Finally, with the trained model, I classified unlabel messages into normal or spam.</div>
-<br>
-<center><img src="images/detect-spam-nlp.png"/></center>
-<br>
+- [LinkedIn](https://www.linkedin.com/in/pankajshakya627)
+- [GitHub](https://github.com/pankajshakya627)
+- [Resume (PDF)](https://pankajshakya627.github.io/assets/Pankaj_Shakya_Resume.pdf)
+- 📧 pankaj.shakya@example.com
 
 ---
-## Data Science
 
-### Credit Risk Prediction Web App
+> "Transforming data into generative intelligence."  
 
-[![Open Web App](https://img.shields.io/badge/Heroku-Open_Web_App-blue?logo=Heroku)](http://credit-risk.herokuapp.com/)
-[![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](https://github.com/chriskhanhtran/credit-risk-prediction/blob/master/documents/Notebook.ipynb)
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/credit-risk-prediction)
 
-<div style="text-align: justify">After my team preprocessed a dataset of 10K credit applications and built machine learning models to predict credit default risk, I built an interactive user interface with Streamlit and hosted the web app on Heroku server.</div>
-<br>
-<center><img src="images/credit-risk-webapp.png"/></center>
-<br>
-
----
-### Kaggle Competition: Predict Ames House Price using Lasso, Ridge, XGBoost and LightGBM
-
-[![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](projects/ames-house-price.html)
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/kaggle-house-price/blob/master/ames-house-price.ipynb)
-
-<div style="text-align: justify">I performed comprehensive EDA to understand important variables, handled missing values, outliers, performed feature engineering, and ensembled machine learning models to predict house prices. My best model had Mean Absolute Error (MAE) of 12293.919, ranking <b>95/15502</b>, approximately <b>top 0.6%</b> in the Kaggle leaderboard.</div>
-<br>
-<center><img src="images/ames-house-price.jpg"/></center>
-<br>
-
----
-### Predict Breast Cancer with RF, PCA and SVM using Python
-
-[![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](projects/breast-cancer.html)
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/predict-breast-cancer-with-rf-pca-svm/blob/master/breast-cancer.ipynb)
-
-<div style="text-align: justify">In this project I am going to perform comprehensive EDA on the breast cancer dataset, then transform the data using Principal Components Analysis (PCA) and use Support Vector Machine (SVM) model to predict whether a patient has breast cancer.</div>
-<br>
-<center><img src="images/breast-cancer.png"/></center>
-<br>
-
----
-### Business Analytics Conference 2018: How is NYC's Government Using Money?
-
-[![Open Research Poster](https://img.shields.io/badge/PDF-Open_Research_Poster-blue?logo=adobe-acrobat-reader&logoColor=white)](pdf/bac2018.pdf)
-
-<div style="text-align: justify">In three-month research and a two-day hackathon, I led a team of four students to discover insights from 6 million records of NYC and Boston government spending data sets and won runner-up prize for the best research poster out of 18 participating colleges.</div>
-<br>
-<center><img src="images/bac2018.JPG"/></center>
-<br>
-
----
-## Filmed by me
-
-[![View My Films](https://img.shields.io/badge/YouTube-View_My_Films-grey?logo=youtube&labelColor=FF0000)](https://www.youtube.com/watch?v=vfZwdEWgUPE)
-
-<div style="text-align: justify">Besides Data Science, I also have a great passion for photography and videography. Below is a list of films I documented to retain beautiful memories of places I traveled to and amazing people I met on the way.</div>
-<br>
-
-- [Ada Von Weiss - You Regret (Winter at Niagara)](https://www.youtube.com/watch?v=-5esqvmPnHI)
-- [The Weight We Carry is Love - TORONTO](https://www.youtube.com/watch?v=vfZwdEWgUPE)
-- [In America - Boston 2017](https://www.youtube.com/watch?v=YdXufiebgyc)
-- [In America - We Call This Place Our Home (Massachusetts)](https://www.youtube.com/watch?v=jzfcM_iO0FU)
- -->
----
-<!-- <center>© 2024 Khanh Tran. Powered by Jekyll and the Minimal Theme.</center> -->
