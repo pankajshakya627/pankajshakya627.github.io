@@ -4,6 +4,8 @@ title: "Pankaj Shakya – Data Scientist (Generative AI)"
 permalink: /
 ---
 
+<div align="center">
+
 # Hello, I’m Pankaj Shakya 👋
 
 I am a passionate **Data Scientist** with 4+ years of experience specializing in **Generative AI**, **NLP**, and **Deep Learning**. Currently at ITC Infotech, I design and deploy AI-driven solutions that transform unstructured data into actionable insights.
@@ -16,7 +18,11 @@ I am a passionate **Data Scientist** with 4+ years of experience specializing in
 - **Reinforcement Learning**: Interactive learning experiences and case-study-driven tutors using DQN, PPO in simulated environments.
 - **Data Engineering & Analytics**: Python, SQL, pandas, and data visualization to uncover patterns and guide product decisions.
 
+</div>
+
 ## 🔧 Featured Projects
+
+<div align="center">
 
 ### 1. GenAI PDF Assistant
 - **Description**: End-to-end RAG-based chatbot for querying large PDF documents.
@@ -66,15 +72,45 @@ I am a passionate **Data Scientist** with 4+ years of experience specializing in
 
 ---
 
+### 5. Satellite Air Quality Downscaling
+- **Description**: High-resolution NO₂ mapping from coarse satellite data using deep learning.
+- **Tech Stack**: TensorFlow, U-Net, GIS libraries, Pandas.
+- **Highlights**:
+  - Downscaled 10km-resolution satellite NO₂ data to 1km grids.
+  - Validated against ground-station measurements with 90% correlation.
+  - Automated pipeline handling cloud-masked data gaps.
+
+[Repo](https://github.com/pankajshakya627/air-quality-downscaling) • [Publication](#)
+
+---
+
+### 6. Adversarial Robustness Testing for ResNet
+- **Description**: Custom ℓ∞ adversarial example generator for CIFAR-10 image classifier.
+- **Tech Stack**: PyTorch, Foolbox, NumPy.
+- **Highlights**:
+  - Center-weighted perturbations (ε=2/255 center, 8/255 edges) to evaluate robustness.
+  - Integrated visualization of clean vs. adversarial examples.
+  - Benchmarked robustness improvements across multiple model variants.
+
+[Code](https://github.com/pankajshakya627/cifar10-adversarial) • [Results](#)
+
+</div>
+
 ## 📫 Connect with Me
+
+<div align="center">
 
 - [LinkedIn](https://www.linkedin.com/in/pankajshakya627)
 - [GitHub](https://github.com/pankajshakya627)
 - [Resume (PDF)](https://pankajshakya627.github.io/assets/Pankaj_Shakya_Resume.pdf)
 - 📧 pankaj.shakya@example.com
 
+</div>
+
 ---
 
-> "Transforming data into generative intelligence."  
+<div align="center">
 
+> "Transforming data into generative intelligence."
 
+</div>
