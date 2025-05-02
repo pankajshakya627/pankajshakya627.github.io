@@ -4,7 +4,7 @@ title: "Pankaj Shakya – Data Scientist (Generative AI)"
 permalink: /
 ---
 
-<div align="center">
+<div style="padding: 0 2rem;">
 
 # Hello, I’m Pankaj Shakya 👋
 
@@ -22,7 +22,7 @@ I am a passionate **Data Scientist** with 4+ years of experience specializing in
 
 ## 🔧 Featured Projects
 
-<div align="center">
+<div align="center" style="padding: 0 2rem;">
 
 ### 1. GenAI PDF Assistant
 - **Description**: End-to-end RAG-based chatbot for querying large PDF documents.
@@ -98,7 +98,7 @@ I am a passionate **Data Scientist** with 4+ years of experience specializing in
 
 ## 📫 Connect with Me
 
-<div align="center">
+<div align="center" style="padding: 0 2rem;">
 
 - [LinkedIn](https://www.linkedin.com/in/pankajshakya627)
 - [GitHub](https://github.com/pankajshakya627)
@@ -109,7 +109,7 @@ I am a passionate **Data Scientist** with 4+ years of experience specializing in
 
 ---
 
-<div align="center">
+<div align="center" style="padding: 0 2rem;">
 
 > "Transforming data into generative intelligence."
 
