@@ -4,7 +4,8 @@ title: "Pankaj Shakya – Data Scientist (Generative AI)"
 permalink: /
 ---
 
-
+<div style="padding: 0 2rem;">
+  
 # Hello, I’m Pankaj Shakya 👋
 
 I am a passionate **Data Scientist** with 4+ years of experience specializing in **Generative AI**, **NLP**, and **Deep Learning**. Currently at ITC Infotech, I design and deploy AI-driven solutions that transform unstructured data into actionable insights.
@@ -21,7 +22,7 @@ I am a passionate **Data Scientist** with 4+ years of experience specializing in
 
 ## 🔧 Featured Projects
 
-<div align="center" style="padding: 0 2rem;">
+<div style="padding: 0 2rem;">
 
 ### 1. GenAI PDF Assistant
 - **Description**: End-to-end RAG-based chatbot for querying large PDF documents.
@@ -31,7 +32,7 @@ I am a passionate **Data Scientist** with 4+ years of experience specializing in
   - Semantic search with contextual response generation.
   - Deployed as a web app with interactive UI and analytics dashboard.
 
-[View on GitHub](https://github.com/pankajshakya627/Langchain_PDF) • [Live Demo](#)
+  [View on GitHub](https://github.com/pankajshakya627/Langchain_PDF) • [Live Demo](#)
 
 ---
 
@@ -43,7 +44,7 @@ I am a passionate **Data Scientist** with 4+ years of experience specializing in
   - Achieved 85%+ accuracy on academic test sets after hyperparameter tuning.
   - Automated logging and model versioning with W&B.
 
-[Explore Code](https://github.com/pankajshakya627/MCQ_FineTune) • [Colab Notebook](#)
+  [Explore Code](https://github.com/pankajshakya627/MCQ_FineTune) • [Colab Notebook](#)
 
 ---
 
@@ -55,7 +56,7 @@ I am a passionate **Data Scientist** with 4+ years of experience specializing in
   - JSON output schema for line-item extraction.
   - Automatic error handling and retry logic for robust performance.
 
-[Source Code](https://github.com/pankajshakya627/invoice-recognition-app) • [Demo](#)
+  [Source Code](https://github.com/pankajshakya627/invoice-recognition-app) • [Demo](#)
 
 ---
 
@@ -71,19 +72,7 @@ I am a passionate **Data Scientist** with 4+ years of experience specializing in
 
 ---
 
-### 5. Satellite Air Quality Downscaling
-- **Description**: High-resolution NO₂ mapping from coarse satellite data using deep learning.
-- **Tech Stack**: TensorFlow, U-Net, GIS libraries, Pandas.
-- **Highlights**:
-  - Downscaled 10km-resolution satellite NO₂ data to 1km grids.
-  - Validated against ground-station measurements with 90% correlation.
-  - Automated pipeline handling cloud-masked data gaps.
-
-[Repo](https://github.com/pankajshakya627/air-quality-downscaling) • [Publication](#)
-
----
-
-### 6. Adversarial Robustness Testing for ResNet
+### 5. Adversarial Robustness Testing for ResNet
 - **Description**: Custom ℓ∞ adversarial example generator for CIFAR-10 image classifier.
 - **Tech Stack**: PyTorch, Foolbox, NumPy.
 - **Highlights**:
@@ -91,13 +80,13 @@ I am a passionate **Data Scientist** with 4+ years of experience specializing in
   - Integrated visualization of clean vs. adversarial examples.
   - Benchmarked robustness improvements across multiple model variants.
 
-[Code](https://github.com/pankajshakya627/cifar10-adversarial) • [Results](#)
+  [Code](https://github.com/pankajshakya627/cifar10-adversarial) • [Results](#)
 
 </div>
 
 ## 📫 Connect with Me
 
-<div align="center" style="padding: 0 2rem;">
+<div style="padding: 0 2rem;">
 
 - [LinkedIn](https://www.linkedin.com/in/pankajshakya627)
 - [GitHub](https://github.com/pankajshakya627)
@@ -108,7 +97,7 @@ I am a passionate **Data Scientist** with 4+ years of experience specializing in
 
 ---
 
-<div align="center" style="padding: 0 2rem;">
+<div style="padding: 0 2rem;">
 
 > "Transforming data into generative intelligence."
 
