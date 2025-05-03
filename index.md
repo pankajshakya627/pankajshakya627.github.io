@@ -83,7 +83,7 @@ I am a passionate **Data Scientist** with 4+ years of experience specializing in
 
 - [LinkedIn](https://www.linkedin.com/in/pankajshakya627)
 - [GitHub](https://github.com/pankajshakya627)
-- [Resume (PDF)](https://pankajshakya627.github.io/assets/Pankaj_Shakya_Resume.pdf)
+- [Resume (PDF)](https://pankajshakya627.github.io/pdf/RESUME_Pankaj.pdf)
 - 📧 pankajshakya627@gmail.com
 
 ---
