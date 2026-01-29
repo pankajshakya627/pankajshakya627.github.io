@@ -15,38 +15,14 @@ description: |
   <strong>Agentic AI</strong>, <strong>LLM applications</strong>, and
   <strong>enterprise automation</strong>.
 
-  <br><br>
-
   My work goes beyond demos — I specialize in creating
   <strong>autonomous, tool-using AI agents</strong> that integrate tightly with real systems
   such as databases, APIs, CI/CD pipelines, and cloud platforms.
-
-  <br><br>
-
-  I have hands-on experience across the full GenAI lifecycle:
-  <ul>
-    <li>Designing multi-agent architectures for complex decision-making</li>
-    <li>Building MCP / FastMCP servers for secure tool access</li>
-    <li>Developing scalable RAG systems over PDFs, SQL, and internal knowledge bases</li>
-    <li>Fine-tuning and optimizing LLMs for domain-specific tasks</li>
-    <li>Deploying AI systems using modern MLOps and cloud-native practices</li>
-  </ul>
-
-  <br>
-
-  My portfolio highlights <strong>real-world AI systems</strong> used for:
-  <ul>
-    <li>Automated PR reviews and code intelligence</li>
-    <li>Natural-language interaction with databases</li>
-    <li>Multi-agent content and workflow automation</li>
-    <li>AI-driven decision support and productivity tools</li>
-  </ul>
 
   <br>
 
   I focus on <strong>reliability, scalability, and real business impact</strong> —
   not just model accuracy.
-
   </p>
 
 theme: jekyll-theme-minimal
