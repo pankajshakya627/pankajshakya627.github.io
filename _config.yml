@@ -1,22 +1,53 @@
-title: <p align="center">  Pankaj </p>
+title: <p align="center">Pankaj</p>
 
 logo: "/images/picture.png?raw=true"
 
-description:
+description: |
   <p align="center">
-  <a href="pdf/resume.pdf">Resume</a> |
-  <a href="https://www.linkedin.com/in/pankajshakya627/">LinkedIn</a> |
-  <a href="https://github.com/pankajshakya627">GitHub</a>
+    <a href="pdf/resume.pdf">Resume</a> |
+    <a href="https://www.linkedin.com/in/pankajshakya627/">LinkedIn</a> |
+    <a href="https://github.com/pankajshakya627">GitHub</a>
   </p>
-  
+
   <p align="justify">
-  
+
+  I design, build, and deploy <strong>production-grade AI systems</strong> with a focus on
+  <strong>Agentic AI</strong>, <strong>LLM applications</strong>, and
+  <strong>enterprise automation</strong>.
+
   <br><br>
-  I am currently a Data Scientist at ITC Infotech, specializing in NLP, Deep Learning research, and Generative AI. 
-  My work involves developing and implementing Large Language Models based application to solve complex problems, particularly in 
-  natural language processing.
+
+  My work goes beyond demos — I specialize in creating
+  <strong>autonomous, tool-using AI agents</strong> that integrate tightly with real systems
+  such as databases, APIs, CI/CD pipelines, and cloud platforms.
+
   <br><br>
+
+  I have hands-on experience across the full GenAI lifecycle:
+  <ul>
+    <li>Designing multi-agent architectures for complex decision-making</li>
+    <li>Building MCP / FastMCP servers for secure tool access</li>
+    <li>Developing scalable RAG systems over PDFs, SQL, and internal knowledge bases</li>
+    <li>Fine-tuning and optimizing LLMs for domain-specific tasks</li>
+    <li>Deploying AI systems using modern MLOps and cloud-native practices</li>
+  </ul>
+
+  <br>
+
+  My portfolio highlights <strong>real-world AI systems</strong> used for:
+  <ul>
+    <li>Automated PR reviews and code intelligence</li>
+    <li>Natural-language interaction with databases</li>
+    <li>Multi-agent content and workflow automation</li>
+    <li>AI-driven decision support and productivity tools</li>
+  </ul>
+
+  <br>
+
+  I focus on <strong>reliability, scalability, and real business impact</strong> —
+  not just model accuracy.
+
   </p>
-  
+
 theme: jekyll-theme-minimal
-google_analytics: UA-145578661-1 # Google Analytics tracking ID
+google_analytics: UA-145578661-1
