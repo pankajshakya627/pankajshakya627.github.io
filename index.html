@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pankaj | AI/ML Engineer & Freelance Consultant</title>
+    <meta name="description" content="Pankaj — Senior AI/ML Engineer offering freelance consulting in LLM applications, multi-agent systems, RAG pipelines, and cloud-deployed AI solutions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* ========== RESET & BASE ========== */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: #1a1a2e;
+            background: #ffffff;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        img { max-width: 100%; display: block; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        /* ========== UTILITIES ========== */
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+        .section { padding: 100px 0; }
+        .section-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #2563eb;
+            margin-bottom: 12px;
+        }
+        .section-title {
+            font-size: 2.4rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #0f172a;
+        }
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #64748b;
+            max-width: 560px;
+            line-height: 1.7;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+        .btn-primary {
+            background: #2563eb;
+            color: #fff;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+        }
+        .btn-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.45);
+        }
+        .btn-outline {
+            background: transparent;
+            color: #2563eb;
+            border: 2px solid #2563eb;
+        }
+        .btn-outline:hover {
+            background: #2563eb;
+            color: #fff;
+        }
+
+        /* ========== NAVBAR ========== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
+        }
+        .navbar.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 72px;
+        }
+        .nav-logo {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #0f172a;
+        }
+        .nav-logo span { color: #2563eb; }
+        .nav-links { display: flex; gap: 32px; align-items: center; }
+        .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #475569;
+            transition: color 0.2s;
+            position: relative;
+        }
+        .nav-links a:hover { color: #2563eb; }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #2563eb;
+            transition: width 0.3s;
+        }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-cta {
+            padding: 10px 24px !important;
+            background: #2563eb;
+            color: #fff !important;
+            border-radius: 6px;
+            font-weight: 600 !important;
+        }
+        .nav-cta:hover { background: #1d4ed8; }
+        .nav-cta::after { display: none !important; }
+        .hamburger { display: none; cursor: pointer; flex-direction: column; gap: 5px; }
+        .hamburger span { width: 24px; height: 2px; background: #0f172a; transition: 0.3s; border-radius: 2px; }
+
+        /* ========== HERO ========== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 72px;
+            background: linear-gradient(135deg, #f8faff 0%, #eef2ff 50%, #f0f9ff 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 700px;
+            height: 700px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.06) 0%, transparent 70%);
+        }
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .hero-content { position: relative; z-index: 1; }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #2563eb;
+            margin-bottom: 24px;
+        }
+        .hero-badge .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #22c55e;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        .hero h1 {
+            font-size: 3.4rem;
+            font-weight: 800;
+            line-height: 1.1;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+        .hero h1 .gradient {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-role {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #475569;
+            margin-bottom: 20px;
+        }
+        .hero-description {
+            font-size: 1.05rem;
+            color: #64748b;
+            line-height: 1.8;
+            margin-bottom: 36px;
+            max-width: 500px;
+        }
+        .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 48px;
+            padding-top: 32px;
+            border-top: 1px solid #e2e8f0;
+        }
+        .hero-stat h3 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #0f172a;
+        }
+        .hero-stat p {
+            font-size: 0.85rem;
+            color: #94a3b8;
+            font-weight: 500;
+        }
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.05);
+            position: relative;
+            max-width: 420px;
+            width: 100%;
+        }
+        .hero-card-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+        .hero-avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: 800;
+        }
+        .hero-card-name { font-size: 1.2rem; font-weight: 700; color: #0f172a; }
+        .hero-card-title { font-size: 0.85rem; color: #64748b; }
+        .tech-stack-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .tech-tag {
+            padding: 8px 12px;
+            background: #f1f5f9;
+            border-radius: 8px;
+            font-size: 0.78rem;
+            font-weight: 500;
+            color: #475569;
+            text-align: center;
+            transition: all 0.2s;
+        }
+        .tech-tag:hover { background: #eff6ff; color: #2563eb; }
+        .floating-badge {
+            position: absolute;
+            background: #fff;
+            border-radius: 12px;
+            padding: 12px 18px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            animation: float 3s ease-in-out infinite;
+        }
+        .floating-badge.top-right { top: -16px; right: -20px; animation-delay: 0s; }
+        .floating-badge.bottom-left { bottom: -16px; left: -20px; animation-delay: 1.5s; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        /* ========== SERVICES ========== */
+        .services { background: #fff; }
+        .services-header { text-align: center; margin-bottom: 60px; }
+        .services-header .section-subtitle { margin: 0 auto; }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .service-card {
+            padding: 36px 32px;
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .service-card:hover {
+            border-color: #2563eb;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(37, 99, 235, 0.1);
+        }
+        .service-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .service-icon.blue { background: #eff6ff; }
+        .service-icon.purple { background: #f5f3ff; }
+        .service-icon.green { background: #f0fdf4; }
+        .service-icon.orange { background: #fff7ed; }
+        .service-icon.teal { background: #f0fdfa; }
+        .service-icon.pink { background: #fdf2f8; }
+        .service-card h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 12px;
+        }
+        .service-card p {
+            font-size: 0.9rem;
+            color: #64748b;
+            line-height: 1.7;
+        }
+        .service-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 16px;
+        }
+        .service-tags span {
+            font-size: 0.72rem;
+            font-weight: 500;
+            padding: 4px 10px;
+            border-radius: 100px;
+            background: #f8fafc;
+            color: #64748b;
+            border: 1px solid #e2e8f0;
+        }
+
+        /* ========== PORTFOLIO ========== */
+        .portfolio { background: #f8fafc; }
+        .portfolio-header { text-align: center; margin-bottom: 60px; }
+        .portfolio-header .section-subtitle { margin: 0 auto; }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+        .project-card {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+        }
+        .project-card.featured {
+            grid-column: span 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .project-visual {
+            padding: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
+        }
+        .project-visual.v1 { background: linear-gradient(135deg, #eff6ff, #dbeafe); }
+        .project-visual.v2 { background: linear-gradient(135deg, #f5f3ff, #ede9fe); }
+        .project-visual.v3 { background: linear-gradient(135deg, #f0fdf4, #dcfce7); }
+        .project-visual.v4 { background: linear-gradient(135deg, #fff7ed, #ffedd5); }
+        .project-visual-icon {
+            font-size: 3.5rem;
+            opacity: 0.9;
+        }
+        .project-info { padding: 28px 32px; }
+        .project-type {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+        .project-info h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 10px;
+        }
+        .project-info p {
+            font-size: 0.9rem;
+            color: #64748b;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+        .project-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .project-stack span {
+            font-size: 0.72rem;
+            font-weight: 500;
+            font-family: 'JetBrains Mono', monospace;
+            padding: 4px 10px;
+            border-radius: 6px;
+            background: #f1f5f9;
+            color: #475569;
+        }
+
+        /* ========== PROCESS ========== */
+        .process { background: #fff; }
+        .process-header { text-align: center; margin-bottom: 60px; }
+        .process-header .section-subtitle { margin: 0 auto; }
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            position: relative;
+        }
+        .process-steps::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 12%;
+            right: 12%;
+            height: 2px;
+            background: linear-gradient(90deg, #2563eb, #7c3aed);
+            opacity: 0.2;
+        }
+        .process-step { text-align: center; position: relative; }
+        .step-number {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: #fff;
+            font-weight: 800;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            position: relative;
+            z-index: 1;
+        }
+        .process-step h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+        .process-step p {
+            font-size: 0.85rem;
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        /* ========== TESTIMONIALS ========== */
+        .testimonials { background: #0f172a; color: #fff; }
+        .testimonials .section-label { color: #60a5fa; }
+        .testimonials .section-title { color: #fff; }
+        .testimonials .section-subtitle { color: #94a3b8; }
+        .testimonials-header { text-align: center; margin-bottom: 60px; }
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .testimonial-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.3s;
+        }
+        .testimonial-card:hover {
+            background: rgba(255,255,255,0.08);
+            transform: translateY(-4px);
+        }
+        .testimonial-stars { color: #fbbf24; font-size: 0.9rem; margin-bottom: 16px; letter-spacing: 2px; }
+        .testimonial-text {
+            font-size: 0.95rem;
+            color: #cbd5e1;
+            line-height: 1.8;
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+        .testimonial-author { display: flex; align-items: center; gap: 12px; }
+        .testimonial-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+        .testimonial-name { font-weight: 600; font-size: 0.9rem; }
+        .testimonial-role { font-size: 0.8rem; color: #94a3b8; }
+
+        /* ========== CONTACT ========== */
+        .contact { background: #fff; }
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+        .contact-info h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 24px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: #eff6ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        .contact-item-label { font-size: 0.8rem; color: #94a3b8; font-weight: 500; }
+        .contact-item-value { font-size: 0.95rem; color: #0f172a; font-weight: 500; }
+        .contact-form {
+            background: #f8fafc;
+            border-radius: 16px;
+            padding: 36px;
+            border: 1px solid #e2e8f0;
+        }
+        .form-group { margin-bottom: 20px; }
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 6px;
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 0.9rem;
+            color: #0f172a;
+            background: #fff;
+            transition: border-color 0.2s;
+        }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        .form-group textarea { resize: vertical; min-height: 120px; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 48px 0 24px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+        .footer-logo { font-size: 1.2rem; font-weight: 800; color: #fff; }
+        .footer-logo span { color: #2563eb; }
+        .footer-links { display: flex; gap: 24px; }
+        .footer-links a {
+            font-size: 0.85rem;
+            color: #94a3b8;
+            transition: color 0.2s;
+        }
+        .footer-links a:hover { color: #fff; }
+        .social-links { display: flex; gap: 12px; }
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            font-size: 1rem;
+        }
+        .social-link:hover { background: #2563eb; border-color: #2563eb; color: #fff; }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            font-size: 0.8rem;
+        }
+
+        /* ========== ANIMATIONS ========== */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 1024px) {
+            .hero .container { grid-template-columns: 1fr; text-align: center; }
+            .hero-description { margin: 0 auto 36px; }
+            .hero-buttons { justify-content: center; }
+            .hero-stats { justify-content: center; }
+            .hero-visual { display: none; }
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .process-steps { grid-template-columns: repeat(2, 1fr); }
+            .process-steps::before { display: none; }
+            .testimonials-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
+            .contact-wrapper { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.4rem; }
+            .section { padding: 70px 0; }
+            .section-title { font-size: 1.8rem; }
+            .services-grid { grid-template-columns: 1fr; }
+            .portfolio-grid { grid-template-columns: 1fr; }
+            .project-card.featured { grid-column: span 1; grid-template-columns: 1fr; }
+            .process-steps { grid-template-columns: 1fr; gap: 24px; }
+            .nav-links { display: none; }
+            .nav-links.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 72px;
+                left: 0;
+                width: 100%;
+                background: #fff;
+                padding: 24px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                gap: 20px;
+            }
+            .hamburger { display: flex; }
+            .form-row { grid-template-columns: 1fr; }
+            .footer-content { flex-direction: column; gap: 24px; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="nav-logo">Pankaj<span>.</span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#process">Process</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact" class="nav-cta">Hire Me</a>
+            </div>
+            <div class="hamburger" id="hamburger" onclick="toggleNav()">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    Available for freelance projects
+                </div>
+                <h1>I Build <span class="gradient">Intelligent AI</span> Solutions</h1>
+                <p class="hero-role">GenAI Engineer & Data Scientist | Freelance Consultant</p>
+                <p class="hero-description">
+                    I build production-grade, agentic AI systems — not demos. Multi-agent architectures,
+                    MCP servers, RAG pipelines, and end-to-end AI platforms that integrate
+                    securely with real systems. Modular, observable, secure, and scalable.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        Let's Talk
+                    </a>
+                    <a href="#portfolio" class="btn btn-outline">View My Work</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <h3>7+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="hero-stat">
+                        <h3>76+</h3>
+                        <p>GitHub Repos</p>
+                    </div>
+                    <div class="hero-stat">
+                        <h3>16</h3>
+                        <p>5-Star Reviews</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="floating-badge top-right">
+                        <span style="color:#22c55e;">&#9679;</span> AI/ML Expert
+                    </div>
+                    <div class="floating-badge bottom-left">
+                        <span style="color:#2563eb;">&#9679;</span> LLM Specialist
+                    </div>
+                    <div class="hero-card-header">
+                        <div class="hero-avatar">P</div>
+                        <div>
+                            <div class="hero-card-name">Pankaj</div>
+                            <div class="hero-card-title">GenAI Engineer & Data Scientist</div>
+                        </div>
+                    </div>
+                    <div class="tech-stack-grid">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">LangGraph</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">MCP</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="services-header">
+                <div class="section-label">What I Offer</div>
+                <h2 class="section-title">Services Tailored for Your Business</h2>
+                <p class="section-subtitle">From strategy to deployment, I deliver AI solutions that create real business value.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-up">
+                    <div class="service-icon blue">&#129302;</div>
+                    <h3>Multi-Agent AI Systems</h3>
+                    <p>Design and build autonomous AI agent architectures that collaborate, reason, and execute complex workflows for your business processes.</p>
+                    <div class="service-tags">
+                        <span>LangGraph</span>
+                        <span>CrewAI</span>
+                        <span>Orchestration</span>
+                    </div>
+                </div>
+                <div class="service-card fade-up">
+                    <div class="service-icon purple">&#128172;</div>
+                    <h3>LLM Application Development</h3>
+                    <p>Custom chatbots, RAG pipelines, document intelligence, and GenAI-powered tools built on top of leading foundation models.</p>
+                    <div class="service-tags">
+                        <span>LangChain</span>
+                        <span>RAG</span>
+                        <span>Vector DBs</span>
+                        <span>GPT/Claude</span>
+                    </div>
+                </div>
+                <div class="service-card fade-up">
+                    <div class="service-icon green">&#9889;</div>
+                    <h3>MCP Server Development</h3>
+                    <p>Build Model Context Protocol servers that let AI models securely interact with your databases, APIs, and internal tools.</p>
+                    <div class="service-tags">
+                        <span>MCP</span>
+                        <span>Tool Use</span>
+                        <span>API Integration</span>
+                    </div>
+                </div>
+                <div class="service-card fade-up">
+                    <div class="service-icon orange">&#128202;</div>
+                    <h3>ML Model Development</h3>
+                    <p>End-to-end machine learning pipelines: data preprocessing, feature engineering, model training, evaluation, and monitoring.</p>
+                    <div class="service-tags">
+                        <span>PyTorch</span>
+                        <span>Scikit-learn</span>
+                        <span>MLflow</span>
+                    </div>
+                </div>
+                <div class="service-card fade-up">
+                    <div class="service-icon teal">&#9729;&#65039;</div>
+                    <h3>Cloud Deployment & MLOps</h3>
+                    <p>Containerized, production-ready deployments on AWS, GCP, or Azure with CI/CD pipelines, monitoring, and auto-scaling.</p>
+                    <div class="service-tags">
+                        <span>AWS</span>
+                        <span>Docker</span>
+                        <span>FastAPI</span>
+                        <span>CI/CD</span>
+                    </div>
+                </div>
+                <div class="service-card fade-up">
+                    <div class="service-icon pink">&#128161;</div>
+                    <h3>AI Strategy Consulting</h3>
+                    <p>Technical advisory on AI adoption, architecture reviews, proof-of-concept builds, and team augmentation for AI initiatives.</p>
+                    <div class="service-tags">
+                        <span>Strategy</span>
+                        <span>PoC</span>
+                        <span>Architecture</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio section" id="portfolio">
+        <div class="container">
+            <div class="portfolio-header">
+                <div class="section-label">Selected Work</div>
+                <h2 class="section-title">Projects That Deliver Results</h2>
+                <p class="section-subtitle">A selection of projects showcasing my expertise across AI/ML domains.</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="project-card featured fade-up">
+                    <div class="project-visual v1">
+                        <div class="project-visual-icon">&#129302;</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-type">AI Agent System</div>
+                        <h3>PR-AGENT: Automated Code Review</h3>
+                        <p>An intelligent AI agent that automates pull request reviews, provides code suggestions, and enforces coding standards across repositories.</p>
+                        <div class="project-stack">
+                            <span>LangChain</span>
+                            <span>Python</span>
+                            <span>GitHub API</span>
+                            <span>LLM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-up">
+                    <div class="project-visual v2">
+                        <div class="project-visual-icon">&#128451;</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-type">MCP Integration</div>
+                        <h3>SQL-MCP Server</h3>
+                        <p>A Model Context Protocol server enabling AI models to query databases through natural language with secure, structured access.</p>
+                        <div class="project-stack">
+                            <span>MCP</span>
+                            <span>SQL</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-up">
+                    <div class="project-visual v3">
+                        <div class="project-visual-icon">&#128196;</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-type">GenAI Application</div>
+                        <h3>GenAI PDF Assistant</h3>
+                        <p>An intelligent document assistant that extracts, summarizes, and answers questions from PDF documents using RAG architecture.</p>
+                        <div class="project-stack">
+                            <span>RAG</span>
+                            <span>LangChain</span>
+                            <span>Streamlit</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-up">
+                    <div class="project-visual v4">
+                        <div class="project-visual-icon">&#128200;</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-type">Machine Learning</div>
+                        <h3>NLP & Classification Models</h3>
+                        <p>Production ML models including spam detection (NLP), breast cancer classification, and housing price prediction.</p>
+                        <div class="project-stack">
+                            <span>BERT</span>
+                            <span>Scikit-learn</span>
+                            <span>NLP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process section" id="process">
+        <div class="container">
+            <div class="process-header">
+                <div class="section-label">How I Work</div>
+                <h2 class="section-title">From Idea to Production</h2>
+                <p class="section-subtitle">A structured, transparent approach to every engagement.</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step fade-up">
+                    <div class="step-number">1</div>
+                    <h3>Discovery</h3>
+                    <p>Understand your business problem, data landscape, and success criteria through in-depth consultation.</p>
+                </div>
+                <div class="process-step fade-up">
+                    <div class="step-number">2</div>
+                    <h3>Architecture</h3>
+                    <p>Design the optimal technical solution with clear milestones, tech stack selection, and resource planning.</p>
+                </div>
+                <div class="process-step fade-up">
+                    <div class="step-number">3</div>
+                    <h3>Development</h3>
+                    <p>Iterative build with regular demos, code reviews, and testing. Full transparency at every sprint.</p>
+                </div>
+                <div class="process-step fade-up">
+                    <div class="step-number">4</div>
+                    <h3>Deployment</h3>
+                    <p>Production deployment with documentation, monitoring setup, and knowledge transfer to your team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <div class="testimonials-header">
+                <div class="section-label">Client Feedback</div>
+                <h2 class="section-title">What People Say</h2>
+                <p class="section-subtitle" style="color:#94a3b8;">16 verified reviews, 5/5 rating on <a href="https://www.teacheron.com/tutor/3sDo" target="_blank" style="color:#60a5fa; text-decoration:underline;">TeacherOn</a></p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-up">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">"The LangGraph Mastery coaching sessions were well-structured, covering everything from fundamentals to advanced topics like multi-agent systems and production patterns. Pankaj explains complex concepts in a very clear and practical way. Highly recommended."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">RC</div>
+                        <div>
+                            <div class="testimonial-name">Raj C</div>
+                            <div class="testimonial-role">LangGraph Coaching Client</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-up">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">"Pankaj teaches from his extensive learning and experience. He tailors lessons to the student and does an amazing job at putting you at ease. A subject matter expert with real experience in Data Science, ML, and AI. I recommend him 100%."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">T</div>
+                        <div>
+                            <div class="testimonial-name">Talitha</div>
+                            <div class="testimonial-role">Data Science &amp; AI Client</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-up">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">"I had an excellent experience working with Pankaj throughout the process of designing and implementing an AI agent for my IT company. He demonstrated a strong understanding of agentic architectures, automation workflows, and real-world business requirements."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">S</div>
+                        <div>
+                            <div class="testimonial-name">Swapna</div>
+                            <div class="testimonial-role">IT Company &mdash; Agentic AI</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG / WRITING -->
+    <section class="section" id="blog" style="background:#f8fafc;">
+        <div class="container">
+            <div style="text-align:center; margin-bottom:60px;">
+                <div class="section-label">Insights & Writing</div>
+                <h2 class="section-title">From My Blog</h2>
+                <p class="section-subtitle" style="margin:0 auto;">Technical deep-dives on AI, ML, and engineering — published on <a href="https://medium.com/@pankajshakya627" target="_blank" style="color:#2563eb; text-decoration:underline;">Medium</a></p>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:24px;">
+                <a href="https://medium.com/@pankajshakya627" target="_blank" class="project-card fade-up" style="text-decoration:none;">
+                    <div class="project-info">
+                        <div class="project-type">LangChain Guide</div>
+                        <h3>The Complete Guide to LangChain (v0.3.x): From Concepts to Production</h3>
+                        <p>A comprehensive deep-dive into LangChain's architecture, components, and best practices for building production-grade LLM applications.</p>
+                        <div class="project-stack">
+                            <span>LangChain</span>
+                            <span>LLM</span>
+                            <span>Production</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://medium.com/@pankajshakya627" target="_blank" class="project-card fade-up" style="text-decoration:none;">
+                    <div class="project-info">
+                        <div class="project-type">SQL & Data Engineering</div>
+                        <h3>Mastering SQL: From Aggregate Functions to Window Functions</h3>
+                        <p>Practical guide for data engineering and backend developer interviews — covering SQL patterns, aggregations, and window functions with real examples.</p>
+                        <div class="project-stack">
+                            <span>SQL</span>
+                            <span>Data Engineering</span>
+                            <span>Interviews</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div style="text-align:center; margin-bottom:60px;">
+                <div class="section-label">Get In Touch</div>
+                <h2 class="section-title">Let's Build Something Great</h2>
+                <p class="section-subtitle" style="margin:0 auto;">Have an AI project in mind? I'd love to hear about it. Let's discuss how I can help.</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Contact Details</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">&#9993;</div>
+                        <div>
+                            <div class="contact-item-label">Email</div>
+                            <div class="contact-item-value">pankajshakya627@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">&#128279;</div>
+                        <div>
+                            <div class="contact-item-label">LinkedIn</div>
+                            <div class="contact-item-value"><a href="https://www.linkedin.com/in/pankajshakya627/" target="_blank" style="color:#2563eb;">linkedin.com/in/pankajshakya627</a></div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">&#128187;</div>
+                        <div>
+                            <div class="contact-item-label">GitHub</div>
+                            <div class="contact-item-value"><a href="https://github.com/pankajshakya627" target="_blank" style="color:#2563eb;">github.com/pankajshakya627</a></div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">&#9997;</div>
+                        <div>
+                            <div class="contact-item-label">Medium</div>
+                            <div class="contact-item-value"><a href="https://medium.com/@pankajshakya627" target="_blank" style="color:#2563eb;">medium.com/@pankajshakya627</a></div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">&#127758;</div>
+                        <div>
+                            <div class="contact-item-label">Location</div>
+                            <div class="contact-item-value">Bengaluru, India (Remote Worldwide)</div>
+                        </div>
+                    </div>
+                    <div style="margin-top:32px;">
+                        <h3 style="margin-bottom:16px;">Follow Me</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/pankajshakya627" target="_blank" class="social-link" title="GitHub">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/pankajshakya627/" target="_blank" class="social-link" title="LinkedIn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="john@company.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Service Needed</label>
+                        <select name="service">
+                            <option value="">Select a service...</option>
+                            <option>Multi-Agent AI Systems</option>
+                            <option>LLM Application Development</option>
+                            <option>MCP Server Development</option>
+                            <option>ML Model Development</option>
+                            <option>Cloud Deployment & MLOps</option>
+                            <option>AI Strategy Consulting</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Project Details</label>
+                        <textarea name="message" placeholder="Tell me about your project, timeline, and budget..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+                        Send Message
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Pankaj<span>.</span></div>
+                <div class="footer-links">
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#process">Process</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/pankajshakya627" target="_blank" class="social-link" title="GitHub">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pankajshakya627/" target="_blank" class="social-link" title="LinkedIn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Pankaj. All rights reserved. Built with purpose, not a 9-to-5.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+        });
+
+        // Mobile nav toggle
+        function toggleNav() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+
+        // Close mobile nav on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+
+        // Scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
